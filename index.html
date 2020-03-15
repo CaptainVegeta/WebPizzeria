@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Tony's Pizza Factory</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="site">
+
+<header>
+        <nav class="navhigh">
+            <p>
+                <a href="index.html" id="index">Tony's Pizza Factory</a>
+            </p>
+            <ul class="navlist" id="navList">
+                <li class="navitem"><a href="pages/pizza.html">Pizza</a></li>
+                <li class="navitem"><a href="pages/salad.html">Salad</a></li>
+                <li class="navitem"><a href="pages/soft-drinks.html">Soft drinks</a></li>
+                <li class="navitem"><a href="pages/feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="navlow" id="navLow">
+            <a href="index.html" class="active">Tony's Pizza Factory</a>
+            <a href="pages/pizza.html">Pizza</a>
+            <a href="pages/salad.html">Salad</a>
+            <a href="pages/soft-drinks.html">Soft drinks</a>
+            <a href="pages/feedback.html">Feedback</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+</header>
+
+
+<main>
+    <div class="siteContent">
+        <h1>Welcome to Tony's Pizza Factory</h1>
+
+        <div class="image-factory">
+            <img id="pizzeriaImageBig" src="pictures/pizzeria.png" alt="Photo of the Pizza Factory" width="960" height="751">
+            <img id="pizzeriaImageSmall" src="pictures/pizzeria.png" alt="Photo of the Pizza Factory" width="300" height="240">
+        </div>
+
+        <div class="products">
+            <a href="pages/pizza.html"><img src="pictures/pizzas.png" alt="Pizza" width="300" height="200"></a>
+            <a href="pages/pizza.html" class="prodRefImg">Pizza</a>
+        </div>
+
+        <div class="products">
+            <a href="pages/salad.html"><img src="pictures/salads.png" alt="Salad" width="300" height="200"></a>
+            <a href="pages/salad.html" class="prodRefImg">Salad</a>
+        </div>
+
+        <div class="products">
+            <a href="pages/soft-drinks.html"><img src="pictures/softdrinks.png" alt="Soft drinks" width="300" height="200"></a>
+            <a href="pages/soft-drinks.html" class="prodRefImg">Soft drinks</a>
+        </div>
+    </div>
+</main>
+
+
+
+<footer>
+    <div class="footer-columns">
+        <div id="openingHours">
+            <p>
+                Hours:<br>
+                Mon-Thu: 11 a.m. - 23 p.m.<br>
+                Fri-Sat: 11 a.m. - 24 p.m.<br>
+                Sunday closed
+            </p>
+        </div>
+    </div>
+    <div class="footer-columns">
+        <div id="guestComment">
+            <p>
+                <q>The Pizzeria is one place I have been<br>
+                    wanting to visit for a long time. The<br>
+                    reason beeing their Napoli pizzza which<br>
+                    absolutely blow me away.
+                </q> - Jimmy
+            </p>
+        </div>
+    </div>
+    <div class="footer-columns">
+        <div id="factoryAddress">
+            <p>
+                Address:<br>
+                Tony's Pizza Factory<br>
+                2122 N Clark St<br>
+                Chicago, IL 60614, USA
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction()
+    {
+        let x = document.getElementById("navLow");
+        if (x.className === "navlow") {
+            x.className += " responsive";
+        } else {
+            x.className = "navlow";
+        }
+    }
+</script>
+
+</div>
+</body>
+</html>

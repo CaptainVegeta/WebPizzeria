@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony's Pizza Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction()
+        {
+            let x = document.getElementById("navLow");
+            if (x.className === "navlow") {
+                x.className += " responsive";
+            } else {
+                x.className = "navlow";
+            }
+        }
+    </script>
+</head>
+<body class="site">
+<header>
+    <nav class="navhigh">
+        <p>
+            <a href="index.html" id="index">Tony's Pizza Factory</a>
+        </p>
+        <ul class="navlist" id="navList">
+            <li class="navitem"><a href="pizza.html">Pizza</a></li>
+            <li class="navitem"><a href="salad.html">Salad</a></li>
+            <li class="navitem"><a href="softdrinks.html">Soft drinks</a></li>
+            <li class="navitem"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="navlow" id="navLow">
+        <a href="index.html">Tony's Pizza Factory</a>
+        <a href="pizza.html">Pizza</a>
+        <a href="salad.html">Salad</a>
+        <a href="softdrinks.html" class="active">Soft drinks</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+</header>
+<div class="siteContent">
+    <div>
+        <h1>Soft Drinks</h1>
+    </div>
+    <div>
+        <form action="#" method="post">
+            <div class ="wrapperDrinks">
+                <img class ="drinksDetails" src="pictures/drink-images/coke.png" alt="Cola" width="300" height="200">
+                <h2 class ="drinksDetails">Coke</h2>
+                <select name="size-coke" id="size-coke" class="drinksDetails">
+                    <option value="50">50cl</option>
+                    <option value="100">100cl</option>
+                </select>
+                <p class="priceDrinks">2</p>
+                <button class ="drinksDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            </div>
+            <div class ="wrapperDrinks">
+                <img class ="drinksDetails" src="pictures/drink-images/fanta.png" alt="Fanta" width="300" height="200">
+                <h2 class ="drinksDetails">Fanta</h2>
+                <select name="size-fanta" id="size-fanta" class="drinksDetails">
+                    <option value="50">50cl</option>
+                    <option value="100">100cl</option>
+                </select>
+                <p class="priceDrinks">2$;</p>
+                <button class ="drinksDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            </div>
+            <div class ="wrapperDrinks">
+                <img class ="drinksDetails" src="pictures/drink-images/pepsi.png" alt="Pepsi" width="300" height="200">
+                <h2 class ="drinksDetails">Pepsi</h2>
+                <select name="size-pepsi" id="size-pepsi" class="drinksDetails">
+                    <option value="50">50cl</option>
+                    <option value="100">100cl</option>
+                </select>
+                <p class="priceDrinks">2$</p>
+                <button class ="drinksDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            </div>
+            <div class ="wrapperDrinks">
+                <img class ="drinksDetails" src="pictures/drink-images/redbull.png" alt="Red bull" width="300" height="200">
+                <h2 class ="drinksDetails">Red bull</h2>
+                <select name="size-redBull" id="size-redBull" class="drinksDetails">
+                    <option value="50">50cl</option>
+                    <option value="100">100cl</option>
+                </select>
+                <p class="priceDrinks">3&dollar;</p>
+                <button class ="drinksDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer-columns">
+        <p id="openingHours">Hours<br>
+            Mon-Thu: 11 a.m. - 23 p.m.<br>
+            Fri-Sat: 11 a.m. - 24 p.m.<br>
+            Sunday closed</p>
+    </div>
+    <div class="footer-columns">
+        <p id="guestComment">"The Pizzeria is one place I have been wanting to visit for a long time. The reason being their Rustica pizza which absolutely blew me away." - Jimmy</p>
+    </div>
+    <div class="footer-columns">
+        <p id="factoryAddress">Address:<br>
+            Tony's Pizza Factory<br>
+            2122 N Clark St<br>
+            Chicago, IL 60614, USA</p>
+    </div>
+</footer>
+</body>
+</html>

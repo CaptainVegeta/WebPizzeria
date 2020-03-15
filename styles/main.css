@@ -1,0 +1,154 @@
+/* Main CSS for Tony's Pizza Factory */
+*{
+    box-sizing: border-box;
+}
+html{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+body {
+    font-family: SansSerif, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*Styling for navigation menu*/
+nav{
+    display: block;
+    overflow: hidden;
+    background-color: lightskyblue;
+    border: black solid;
+    border-width: 2px 0 2px 0;
+}
+ul.navlist{
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#index{
+    display: inline;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 5px;
+    min-width: 175px;
+    color: black;
+    text-decoration: none;
+}
+li.navitem{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 75%;
+}
+li>a{
+    padding: 0 1em;
+}
+div.navlow{
+    display: none;
+}
+/* Styling for site content*/
+div.siteContent {
+    flex: 1;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 125%;
+}
+#pizzeriaImageBig{
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+#pizzeriaImageSmall{
+    display: none;
+}
+div.products{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 10px 0;
+    text-align: center;
+    width: 33%;
+}
+.prodRefImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: auto;
+}
+a.prodRefImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-decoration: none;
+}
+/*Styling for product pages (Pizza, Salads, Drinks)*/
+.pizza-offers, .salad-offers, .softdrink-offers{
+    float: left;
+    margin: 10px 10px 40px 10px;
+    width:260px;
+    height: 275px;
+}
+img.pizzaDetails, img.saladDetails, img.drinksDetails{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 5px auto;
+}
+h2.pizzaDetails, h2.saladDetails, h2.drinksDetails{
+    clear: left;
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em 8px;
+    height: 2.5em;
+    font-size: 100%;
+}
+button.pizzaDetails, button.saladDetails, button.drinksDetails{
+    float: right;
+    margin: 0 0;
+    padding: 0 0;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border:  lightskyblue solid 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button.pizzaDetails:hover, button.saladDetails:hover, button.drinksDetails:hover{
+    border:  gold solid 1px;
+}
+p.pricePizza, p.priceSalad, p.priceDrinks{
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em .5em;
+    width: 16%;
+    height: 2.5em;
+    text-align: center;
+}
+p.pizzaDescription, p.saladDescription {
+    clear: left;
+    float: left;
+    margin: 0 0;
+    padding: .5em .5em .5em .5em;
+    color: black;
+    font-size: 60%;
+}
+select.saladDetails, select.drinksDetails{
+    clear: left;
+    display: inline;
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em 8px;
+    width: 68%;
+    height: 2.5em;
+}
+

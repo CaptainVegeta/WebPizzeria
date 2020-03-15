@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tony's Pizza Factory</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navhigh">
+        <p>
+            <a href="../index.html" id="index">Tony's Pizza Factory</a>
+        </p>
+        <ul class="navlist" id="navList">
+            <li class="navitem"><a href="pizza.html">Pizza</a></li>
+            <li class="navitem"><a href="salad.html">Salad</a></li>
+            <li class="navitem"><a href="soft-drinks.html">Soft drinks</a></li>
+            <li class="navitem"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="navlow" id="navLow">
+        <a href="../index.html" class="active">Tony's Pizza Factory</a>
+        <a href="pizza.html">Pizza</a>
+        <a href="salad.html">Salad</a>
+        <a href="soft-drinks.html">Soft drinks</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+</header>
+
+<main>
+    <h1>Soft drinks</h1>
+
+    <div id="menu">
+    <div id="softdrink-coke" class="softdrink-offers">
+        <div class="product-image"><p><img src="../pictures/placeholder.png" alt="Coke Can"></p></div>
+        <div class="product-name"><p>Coke</p></div>
+        <div class="drink-size-selection"><p>
+            <select name="drink-size" size="1" title="choosing drink size">
+                <option value="33cl">33cl</option>
+                <option value="50cl" selected>50cl</option>
+                <option value="250cl">250cl</option>
+            </select>
+        </p></div>
+        <div class="product-price"><p>2$</p></div>
+        <div class="add-button"><p><a href="cart-message.html"><img src="../pictures/cart.png" alt="add to cart" width="30" height="30"></a></p></div>
+    </div>
+
+    <div id="softdrink-fanta" class="softdrink-offers">
+        <div class="product-image"><p><img src="../pictures/placeholder.png" alt="Fanta Can"></p></div>
+        <div class="product-name"><p>Fanta</p></div>
+        <div class="drink-size-selection"><p>
+            <select name="drink-size" size="1" title="choosing drink size">
+                <option value="33cl">33cl</option>
+                <option value="50cl" selected>50cl</option>
+                <option value="250cl">250cl</option>
+            </select>
+        </p></div>
+        <div class="product-price"><p>2$</p></div>
+        <div class="add-button"><p><a href="cart-message.html"><img src="../pictures/cart.png" alt="add to cart" width="30" height="30"></a></p></div>
+    </div>
+
+    <div id="softdrink-pepsi" class="softdrink-offers">
+        <div class="product-image"><p><img src="../pictures/placeholder.png" alt="Pepsi Can"></p></div>
+        <div class="product-name"><p>Pepsi</p></div>
+        <div class="drink-size-selection"><p>
+            <select name="drink-size" size="1" title="choosing drink size">
+                <option value="33cl">33cl</option>
+                <option value="50cl" selected>50cl</option>
+                <option value="250cl">250cl</option>
+            </select>
+        </p></div>
+        <div class="product-price"><p>2$</p></div>
+        <div class="add-button"><p><a href="cart-message.html"><img src="../pictures/cart.png" alt="add to cart" width="30" height="30"></a></p></div>
+    </div>
+
+    <div id="softdrink-redbull" class="softdrink-offers">
+        <div class="product-image"><p><img src="../pictures/placeholder.png" alt="Red Bull Can"></p></div>
+        <div class="product-name"><p>Red bull</p></div>
+        <div class="drink-size-selection"><p>
+            <select name="drink-size" size="1" title="choosing drink size">
+                <option value="33cl">33cl</option>
+                <option value="50cl" selected>50cl</option>
+                <option value="250cl">250cl</option>
+            </select>
+        </p></div>
+        <div class="product-price"><p>3$</p></div>
+        <div class="add-button"><p><a href="cart-message.html"><img src="../pictures/cart.png" alt="add to cart" width="30" height="30"></a></p></div>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-columns">
+        <div id="openingHours">
+            <p>
+                Hours:<br>
+                Mon-Thu: 11 a.m. - 23 p.m.<br>
+                Fri-Sat: 11 a.m. - 24 p.m.<br>
+                Sunday closed
+            </p>
+        </div>
+    </div>
+    <div class="footer-columns">
+        <div id="guestComment">
+            <p>
+                <q>The Pizzeria is one place I have been<br>
+                    wanting to visit for a long time. The<br>
+                    reason beeing their Napoli pizzza which<br>
+                    absolutely blow me away.
+                </q> - Jimmy
+            </p>
+        </div>
+    </div>
+    <div class="footer-columns">
+        <div id="factoryAddress">
+            <p>
+                Address:<br>
+                Tony's Pizza Factory<br>
+                2122 N Clark St<br>
+                Chicago, IL 60614, USA
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction()
+    {
+        let x = document.getElementById("navLow");
+        if (x.className === "navlow") {
+            x.className += " responsive";
+        } else {
+            x.className = "navlow";
+        }
+    }
+</script>
+
+</body>
+</html>

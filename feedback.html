@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony's Pizza Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction()
+        {
+            let x = document.getElementById("navLow");
+            if (x.className === "navlow") {
+                x.className += " responsive";
+            } else {
+                x.className = "navlow";
+            }
+        }
+    </script>
+</head>
+<body class="site">
+<header>
+    <nav class="navhigh">
+        <p>
+            <a href="index.html" id="index">Tony's Pizza Factory</a>
+        </p>
+        <ul class="navlist" id="navList">
+            <li class="navitem"><a href="pizza.html">Pizza</a></li>
+            <li class="navitem"><a href="salad.html">Salad</a></li>
+            <li class="navitem"><a href="softdrinks.html">Soft drinks</a></li>
+            <li class="navitem"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="navlow" id="navLow">
+        <a href="index.html">Tony's Pizza Factory</a>
+        <a href="pizza.html">Pizza</a>
+        <a href="salad.html">Salad</a>
+        <a href="softdrinks.html">Soft drinks</a>
+        <a href="feedback.html" class="active">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+</header>
+<div class="siteContent">
+    <div class="title">
+        <h1>Tell us what you think</h1>
+    </div>
+    <div class="feedback">
+        <form class="fb-form" action="#" method="post">
+            <div>
+                <fieldset class="fb-fieldset">
+                    <legend class="fb-legend">How do you like our pizza?</legend>
+                    <ul class="fb-ul">
+                        <li class="fb-liPizza"><label><input type="radio" name="likePizza" value="4" checked>Awesome</label></li>
+                        <li class="fb-liPizza"><label><input type="radio" name="likePizza" value="3">Good</label></li>
+                        <li class="fb-liPizza"><label><input type="radio" name="likePizza" value="2">Okay</label></li>
+                        <li class="fb-liPizza"><label><input type="radio" name="likePizza" value="1">Poor</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="fb-fieldset">
+                    <legend class="fb-legend">What do you think about our prizes?</legend>
+                    <ul class="fb-ul">
+                        <li class="fb-liPrizes"><label><input type="radio" name="price" value="3" checked>Fair</label></li>
+                        <li class="fb-liPrizes"><label><input type="radio" name="price" value="2">Okay</label></li>
+                        <li class="fb-liPrizes"><label><input type="radio" name="price" value="1">Expensive</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="contactInfo">
+                <fieldset class="fb-fieldset">
+                    <legend class="fb-legend">Contact Information</legend>
+                    <div class="contactName">
+                        <label class="stretch" for="name">Your Name?</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="contactEmail">
+                        <label class="stretch" for="email">Your e-mail address?</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="fb-fieldset">
+                    <legend class="fb-legend">What can we do better?</legend>
+                    <textarea name="dobetter" id="dobetter"></textarea>
+                </fieldset>
+            </div>
+            <div class="fb-submit">
+                <input type="submit" value="Send">
+            </div>
+
+        </form>
+    </div>
+
+
+
+</div>
+<footer>
+    <div class="footer-columns">
+        <p id="openingHours">Hours<br>
+            Mon-Thu: 11 a.m. - 23 p.m.<br>
+            Fri-Sat: 11 a.m. - 24 p.m.<br>
+            Sunday closed</p>
+    </div>
+    <div class="footer-columns">
+        <p id="guestComment">"The Pizzeria is one place I have been wanting to visit for a long time. The reason being their Rustica pizza which absolutely blew me away." - Jimmy</p>
+    </div>
+    <div class="footer-columns">
+        <p id="factoryAddress">Address:<br>
+            Tony's Pizza Factory<br>
+            2122 N Clark St<br>
+            Chicago, IL 60614, USA</p>
+    </div>
+</footer>
+</body>
+</html>

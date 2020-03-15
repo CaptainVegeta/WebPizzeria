@@ -1,0 +1,412 @@
+/* Main CSS for Tony's Pizza Factory */
+*{
+    box-sizing: border-box;
+}
+html{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+body {
+    font-family: SansSerif, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*Styling for navigation menu*/
+nav{
+    display: block;
+    overflow: hidden;
+    background-color: #9fc5f8;
+    border: black solid;
+    border-width: 2px 0 2px 0;
+}
+ul.navlist{
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#index{
+    display: inline;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 5px;
+    min-width: 175px;
+    color: black;
+    text-decoration: none;
+}
+li.navitem{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 75%;
+}
+li>a{
+    padding: 0 1em;
+}
+div.navlow{
+    display: none;
+}
+/* Styling for site content*/
+div.siteContent {
+    flex: 1;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 125%;
+}
+#PizzeriaBig{
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+#PizzeriaSmall{
+    display: none;
+}
+div.products{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 10px 0;
+    text-align: center;
+    width: 33%;
+}
+.prodRefImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: auto;
+}
+a.prodRefImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-decoration: none;
+}
+/*Styling for product pages (Pizza, Salads, Drinks)*/
+.wrapperPizza, .wrapperSalad, .wrapperDrinks{
+    float: left;
+    margin: 10px 10px 40px 10px;
+    width:260px;
+    height: 275px;
+}
+img.pizzaDetails, img.saladDetails, img.drinksDetails{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 5px auto;
+}
+h2.pizzaDetails, h2.saladDetails, h2.drinksDetails{
+    clear: left;
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em 8px;
+    height: 2.5em;
+    font-size: 100%;
+}
+button.pizzaDetails, button.saladDetails, button.drinksDetails{
+    float: right;
+    margin: 0 0;
+    padding: 0 0;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border:  #9fc5f8 solid 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+p.pricePizza, p.priceSalad, p.priceDrinks{
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em .5em;
+    width: 16%;
+    height: 2.5em;
+    text-align: center;
+}
+p.pizzaDescription, p.saladDescription {
+    clear: left;
+    float: left;
+    margin: 0 0;
+    padding: .5em .5em .5em .5em;
+    color: black;
+    font-size: 60%;
+}
+select.saladDetails, select.drinksDetails{
+    clear: left;
+    display: inline;
+    float: left;
+    margin: 0 0;
+    padding: .5em 0 .5em 8px;
+    width: 68%;
+    height: 2.5em;
+}
+/*Styling for pizza page*/
+h2.pizzaDetails{
+    width: 68%;
+}
+/*Styling for feedback (fb)*/
+.feedbackTitle > h1 {
+    font-family: "Arial", sans-serif;
+}
+form.fb-form{
+    width: 450px;
+    margin: 10px auto 10px auto;
+}
+fieldset.fb-fieldset{
+    display: inline-block;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+    font-size: 100%;
+
+}
+
+div.feedback {
+    display: flex;
+    justify-content: center;
+}
+
+div.fb-submit {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+textarea, #name, #email {
+    width: 100%;
+    padding: 6px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: "Arial", sans-serif;
+    margin: 1em 0 1em 0;
+}
+
+ul.fb-ul{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+
+}
+li.fb-liPizza, li.fb-liPrizes{
+    display: block;
+    float: left;
+    padding: 0 .5em 0 .5em;
+}
+li.fb-liPizza{
+    width: 25%;
+}
+li.fb-liPrizes{
+    width: 33%;
+}
+input[type="radio"]{
+    margin: 0 .5em 0 0;
+}
+input[type="submit"]{
+    display: block;
+    float: right;
+    margin: 0 0;
+    border: black solid 2px;
+    border-radius: 2px;
+}
+textarea{
+    height: 6em;
+    resize: none;
+}
+/*Styling for footer*/
+footer{
+    display: inline-block;
+    clear: left;
+    background-color: #9fc5f8;
+    color: black;
+    border: black solid;
+    border-width: 2px 0 2px 0;
+    font-size: .9vw;
+}
+.footer-columns{
+    display: block;
+    float: left;
+    margin: 10px 0;
+    width: 33%;
+}
+#openingHours {
+    margin: 0 0;
+    padding: 0 0 0 10px;
+}
+#guestComment{
+    margin: 0 0;
+    padding: 0 10px;
+    font-style: italic;
+}
+#factoryAddress{
+    margin: 0 0;
+    float: right;
+    padding: 0 40px 0 0;
+}
+@media screen and (max-width: 680px) {
+    /*Styling for navigation menu*/
+    html {
+        width: 320px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    div.navlow {
+        display: block;
+    }
+
+    .navlow {
+        background-color: #9fc5f8;
+        overflow: hidden;
+    }
+
+    .navlow a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navlow a:hover {
+        background-color: dodgerblue;
+        color: black;
+    }
+
+    .active {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .navlow a:not(:first-child) {
+        display: none;
+    }
+
+    .navlow a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navlow.responsive {
+        position: relative;
+    }
+
+    .navlow.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navlow.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Styling for site content*/
+    .siteContent {
+        max-width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 125%;
+    }
+
+    #PizzeriaBig {
+        display: none;
+    }
+
+    #PizzeriaSmall {
+        display: block;
+        margin: .5em auto;
+        max-width: 100%;
+    }
+    a.prodRefImg {
+        font-size: 300%;
+    }
+    div.products {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    .prodRefImg {
+        max-width: 80%;
+    }
+
+    /*Styling for feedback (fb)*/
+    form.fb-form {
+        width: 320px;
+        margin: .5em auto .5em auto;
+    }
+
+    textarea, #name, #email {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    ul.fb-ul {
+        display: inline-block;
+        max-width: 100%;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    li.fb-liPizza, li.fb-liPrizes {
+        display: inline;
+        clear: left;
+        float: left;
+        margin: 0 1em 0 0;
+        padding: .5em 0;
+    }
+
+    li.fb-liPizza {
+        width: auto;
+    }
+
+    li.fb-liPrizes {
+        width: auto;
+    }
+    li>label{
+        padding: 0 85px 0 85px;
+    }
+
+    /*Styling for footer*/
+    footer {
+        display: inline-block;
+        clear: left;
+        width: 100%;
+        background-color: #9fc5f8;
+        color: black;
+        border: black solid;
+        border-width: 2px 0 2px 0;
+        font-size: 100%;
+    }
+
+    .footer-columns {
+        width: 100%;
+        padding: 0 20%;
+    }
+
+    #guestComment, #factoryAddress {
+        display: none;
+    }
+}

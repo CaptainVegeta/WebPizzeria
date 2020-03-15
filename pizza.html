@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony's Pizza Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction()
+        {
+            let x = document.getElementById("navLow");
+            if (x.className === "navlow") {
+                x.className += " responsive";
+            } else {
+                x.className = "navlow";
+            }
+        }
+    </script>
+</head>
+<body class="site">
+<header>
+    <nav class="navhigh">
+        <p>
+            <a href="index.html" id="index">Tony's Pizza Factory</a>
+        </p>
+        <ul class="navlist" id="navList">
+            <li class="navitem"><a href="pizza.html">Pizza</a></li>
+            <li class="navitem"><a href="salad.html">Salad</a></li>
+            <li class="navitem"><a href="softdrinks.html">Soft drinks</a></li>
+            <li class="navitem"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="navlow" id="navLow">
+        <a href="index.html">Tony's Pizza Factory</a>
+        <a href="pizza.html" class="active">Pizza</a>
+        <a href="salad.html">Salad</a>
+        <a href="softdrinks.html">Soft drinks</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+</header>
+<div class="siteContent">
+    <h1>Pizzas</h1>
+    <div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-piccante.png" alt="Pizza piccante" width="300" height="200">
+            <h2 class ="pizzaDetails">Piccante</h2>
+            <p class="pricePizza">16$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, spicy salami, chillies, oregano</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-giardino.png" alt="Pizza giardino" width="300" height="200">
+            <h2 class ="pizzaDetails">Giardino</h2>
+            <p class="pricePizza">14$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, artichokes, fresh mushrooms</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-funghi.png" alt="Pizza prosciutto e funghi" width="300" height="200">
+            <h2 class ="pizzaDetails">Prosciutto e funghi</h2>
+            <p class="pricePizza">15$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, ham, fresh mushrooms, oregano</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-formaggi.png" alt="Pizza quattro formaggi" width="300" height="200">
+            <h2 class ="pizzaDetails">Quattro formaggi</h2>
+            <p class="pricePizza">13$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, parmesan, gorgonzola (blue cheese)</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-stagioni.png" alt="Pizza quattro stagioni" width="300" height="200">
+            <h2 class ="pizzaDetails">Quattro stagioni</h2>
+            <p class="pricePizza">17$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, ham, artichokes, fresh mushrooms</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-stromboli.png" alt="Pizza stromboli" width="300" height="200">
+            <h2 class ="pizzaDetails">Stromboli</h2>
+            <p class="pricePizza">12$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, fresh chillies, olives, oregano</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-verde.png" alt="Pizza verde" width="300" height="200">
+            <h2 class ="pizzaDetails">Verde</h2>
+            <p class="pricePizza">13$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, broccoli, spinach, oregano</p>
+        </div>
+        <div class ="wrapperPizza">
+            <img class ="pizzaDetails" src="pictures/pizza-images/pizza-rustica.png" alt="Pizza rustica" width="300" height="200">
+            <h2 class ="pizzaDetails">Rustica</h2>
+            <p class="pricePizza">15$</p>
+            <button class ="pizzaDetails"><img src="pictures/cart.png" alt="Add to cart" width="30" height="30"></button>
+            <p class="pizzaDescription">Tomato, mozzarella, ham, bacon, onions, garlic, oregano</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-columns">
+        <p id="openingHours">Hours<br>
+            Mon-Thu: 11 a.m. - 23 p.m.<br>
+            Fri-Sat: 11 a.m. - 24 p.m.<br>
+            Sunday closed</p>
+    </div>
+    <div class="footer-columns">
+        <p id="guestComment">"The Pizzeria is one place I have been wanting to visit for a long time. The reason being their Rustica pizza which absolutely blew me away." - Jimmy</p>
+    </div>
+    <div class="footer-columns">
+        <p id="factoryAddress">Address:<br>
+            Tony's Pizza Factory<br>
+            2122 N Clark St<br>
+            Chicago, IL 60614, USA</p>
+    </div>
+</footer>
+</body>
+</html>
